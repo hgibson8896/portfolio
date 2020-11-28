@@ -39,18 +39,18 @@
 
                     <div>
                         <div class="d-flex flex-row text-white align-items stretch text-center">
-                            <div class="port-item p-4 bg-primary">
-                                <a  class="active" href="index.html">
+                            <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                <a href="index.html">
                                  <i class="fas fa-home fa-2x display-block"></i>
                                 <span class="d-none d-sm-block">Home</span> </a>
                             </div>
-                            <div class="port-item p-4 bg-success">
-                               <a href="resume.html">
+                            <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                               <a class="active" href="resume.html">
                                 <i class="fas fa-graduation-cap fa-2x display-block"></i>
                                 <span class="d-none d-sm-block">Resume</span></a>
                             </div>
                            
-                            <div class="port-item p-4 bg-warning">
+                            <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#contact">
                                 <a href="contact.html">
                                 <i class="fas fa-envelope fa-2x display-block"></i>
                                 <span class="d-none d-sm-block">Contact</span></a>
@@ -62,98 +62,17 @@
          </div>
     </header>
 
-<!-- HOME -->
-
-<div id="home">
-    <div class="card card-body bg-primary text-white py-5">
-        <h2> Welcome to My Portfolio</h2>
-        <p> A collection of projects I have been developing</p>
-    </div>
-
-<!-- PORTFOLIO -->
-
-<div class="container">
-    <div class="row">
-
-    <div class="col-md-6 my-5 mx-auto">
-    <div class="card">
-    <img class="card-img-top" src="img/image1.jpg"  alt="Ocean Lake Pub Restaurant portfolio">
-    <div class="card-body bg-secondary">
-        <h4 class="card-title">Ocean Lake Pub</h4>
-        <p class="card-text">HTML, CSS, Bootstrap, jQuery, JavaScript  </p>
-
-        <a href="https://github.com/hgibson8896/restaurant" class="text-white">
-            <i class="fab fa-github mr-3"></i>                                
-        </a>
-        <a href="https://hgibson8896.github.io/restaurant/" class="text-white">
-        <i class="fas fa-globe"></i>
-        </a>
-
+ <!-- RESUME HEADER -->
+<div id="resume" >
+    <div class="card card-body bg-success text-white py-5">
+        <h2> Resume </h2>
     </div>
 </div>
-</div>
 
-<div class="col-md-6 my-5 mx-auto">
-<div class="card">
-    <img class="card-img-top" src="https://source.unsplash.com/random/300x200" alt="">
-    <div class="card-body bg-secondary">
-        <h4 class="card-title">Coming Soon</h4>
-        <p class="card-text">Coming Soon</p>
+<h1>IN PROGRESS</h1>
 
-        <a href="https://github.com/hgibson8896" class="text-white">
-            <i class="fab fa-github mr-3"></i>                                
-        </a>
-        <a href="file:///C:/Bootsrap_Projects/portfolio/index.html" class="text-white">
-        <i class="fas fa-globe"></i>
-        </a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="row">
-
-    <div class="col-md-6 my-5 mx-auto">
-    <div class="card">
-        <img class="card-img-top" src="https://source.unsplash.com/random/300x200" alt="">
-        <div class="card-body bg-secondary">
-            <h4 class="card-title">Coming Soon</h4>
-            <p class="card-text">Coming Soon</p>
-    
-            <a href="https://github.com/hgibson8896" class="text-white">
-                <i class="fab fa-github mr-3"></i>                                
-            </a>
-            <a href="file:///C:/Bootsrap_Projects/portfolio/index.html" class="text-white">
-            <i class="fas fa-globe"></i>
-            </a>
-
-    </div>
-</div>
-</div>
-
-<div class="col-md-6 my-5 mx-auto">
-<div class="card">
-    <img class="card-img-top" src="https://source.unsplash.com/random/300x200" alt="">
-    <div class="card-body bg-secondary">
-        <h4 class="card-title">Coming Soon</h4>
-        <p class="card-text">Coming Soon</p>
-
-        <a href="https://github.com/hgibson8896" class="text-white">
-            <i class="fab fa-github mr-3"></i>                                
-        </a>
-        <a href="file:///C:/Bootsrap_Projects/portfolio/index.html" class="text-white">
-        <i class="fas fa-globe"></i>
-        </a>
-</div>
-</div>
-</div>
-</div>
-<div></div></div>
-
-
-
-<!-- FOOTER -->
-<footer id="main-footer" class="p-5 bg-dark text-white text-center">
+    <!-- FOOTER -->
+<footer id="main-footer" class="p-5 bg-dark text-white text-center" >
     <div class="row">
         <div class="col-md">
             <h6> Copyright &copy; <span id ="year"></span> Heather Gibson</h6>
@@ -181,12 +100,13 @@
 
     // 
 
-    // $('.port.item').click(function(){
-    //     $('.collapse').collapse('hide');
-    // });
+    $('.port.item').click(function(){
+        $('.collapse').collapse('hide');
+    });
 
 
 </script>
 </body>
 
 </html>
+</div>

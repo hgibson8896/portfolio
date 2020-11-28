@@ -35,3 +35,32 @@
         padding:3em !important;
     }
 }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/* NAVIGATION*/
+
+
+/* unvisited link */
+a {
+    color: #000000;
+  }
+
+  /* visited link */
+a:visited {
+    columns: #000000;;
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: #ffff;
+  }
+  
+  /* selected link */
+ a.active {
+    color:#ffff ;
+  }
